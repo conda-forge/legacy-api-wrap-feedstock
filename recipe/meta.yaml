@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace("-", "_") }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace("-", "_") }}-{{ version }}.tar.gz
   sha256: 9c40d67aa8312fec8763e87cbf28fea4b67710c79ca7a18137b573d150f3b2b4
 
 build:
@@ -17,22 +17,24 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - hatch-docstring-description
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
     - legacy_api_wrap
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/flying-sheep/legacy-api-wrap
-  license: GPL-3.0-or-later
-  license_family: GPL
-  license_file: LICENSE
+  license: MPL-2.0
+  license_family: MPL
+  license_file: LICENSE.rst
   summary: "Wrap legacy APIs in python projects."
 
 extra:
