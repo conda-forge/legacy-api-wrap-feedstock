@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@flying-sheep](https://github.com/flying-sheep/)
 * [@raivivek](https://github.com/raivivek/)
 
-
-<!-- dummy commit to enable rerendering -->
-

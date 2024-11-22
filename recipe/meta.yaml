@@ -1,5 +1,5 @@
 {% set name = "legacy-api-wrap" %}
-{% set version = "1.4" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 92dfa274cedb26d6e6f70fac85c856fbdcc05058066656d76a665fb4bf11b785
+  sha256: 9c40d67aa8312fec8763e87cbf28fea4b67710c79ca7a18137b573d150f3b2b4
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
