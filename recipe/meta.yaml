@@ -33,7 +33,7 @@ test:
 about:
   home: https://github.com/flying-sheep/legacy-api-wrap
   license: MPL-2.0
-  license_family: MPL
+  license_family: MOZILLA
   license_file: LICENSE.rst
   summary: "Wrap legacy APIs in python projects."
 
