@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/legacy-api-wrap
 
 Home: https://github.com/flying-sheep/legacy-api-wrap
 
-Package license: GPL-3.0-or-later
+Package license: MPL-2.0
 
 Summary: Wrap legacy APIs in python projects.
 
